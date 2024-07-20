@@ -1,0 +1,210 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/R.def7a2c7ea7637b92ba284f5c900ec04?rik=pwKjcxHzS0YdTQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+h2
+{
+    text-align: center;
+    color: mediumblue;
+}
+
+h4 {
+    text-align: center;
+    color: blueviolet;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #4CAF50; 
+    margin: 20px 0; 
+}
+
+header .logo {
+    width: 50px; 
+    margin-bottom: 10px; 
+}
+
+header h3
+{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:nth-child(1), 
+nav ul li a:nth-child(2) {
+    color: white;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/998/394/original/blue-abstract-background-blue-background-design-abstract-futuristic-background-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Optional: Add spacing between videos */
+}
+
+ #gallerywrapper {
+     width:640px;
+     height:770px;
+     margin:0 auto;
+     position:relative;
+     font-family:verdana, arial, sans-serif;
+ } 
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:770px;
+     width:640px;
+     overflow:hidden;
+     text-align:center;
+ } 
+
+ #gallerywrapper #gallery div {
+     width:640px; height:900px; 
+     padding-top:10px; 
+     position:relative;
+ } 
+
+ #gallerywrapper #gallery div img {
+     clear:both; 
+     display:block; 
+     margin:0 auto; 
+     border:0;
+ } 
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0; 
+     margin:0; 
+     font-size:18px;
+ } 
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0; 
+     margin:0; 
+     font-size:12px; 
+     line-height:18px;
+ } 
+
+ #gallery .previous{ 
+     display:inline;
+     float:left;
+     margin-left:80px;
+     text-decoration:none;
+ } 
+
+ #gallery .next{ 
+     display:inline;
+     float:right;
+     margin-right:80px;
+     text-decoration:none;
+ }
