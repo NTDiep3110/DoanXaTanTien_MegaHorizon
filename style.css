@@ -152,59 +152,96 @@ footer {
 }
 
  #gallerywrapper {
-     width:640px;
-     height:770px;
-     margin:0 auto;
-     position:relative;
-     font-family:verdana, arial, sans-serif;
- } 
+    width: 640px;
+    height: 770px;
+    margin: 0 auto;
+    position: relative;
+    font-family: Verdana, Arial, sans-serif;
+    overflow: hidden; /* Ensures no overflow outside the container */
+}
 
- #gallerywrapper #gallery {
-     position:absolute;
-     left:0;
-     top:0;
-     height:770px;
-     width:640px;
-     overflow:hidden;
-     text-align:center;
- } 
+#gallery {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; /* Adjusts the width to fit the wrapper */
+    height: 100%; /* Adjusts the height to fit the wrapper */
+    text-align: center;
+}
 
- #gallerywrapper #gallery div {
-     width:640px; height:900px; 
-     padding-top:10px; 
-     position:relative;
- } 
+#gallery div {
+    width: 100%; /* Adjusts the width to fit the gallery */
+    height: 100%; /* Adjusts the height to fit the gallery */
+    padding: 0; /* Remove padding for a tighter fit */
+    box-sizing: border-box; /* Ensures padding does not affect the width/height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
- #gallerywrapper #gallery div img {
-     clear:both; 
-     display:block; 
-     margin:0 auto; 
-     border:0;
- } 
+#gallery div img {
+    max-width: 100%; /* Ensures images fit within the gallery */
+    max-height: 90%; /* Ensures images do not exceed the height of the container */
+    object-fit: contain; /* Maintains the aspect ratio of images */
+    border: 0;
+}
 
- #gallerywrapper #gallery div h3 {
-     padding:10px 0 0 0; 
-     margin:0; 
-     font-size:18px;
- } 
+#gallery div h3 {
+    margin: 10px 0 0; /* Margin adjusted to align with image */
+    font-size: 18px;
+    color: #333; /* Text color for better visibility */
+}
 
- #gallerywrapper #gallery div p {
-     padding:5px 0; 
-     margin:0; 
-     font-size:12px; 
-     line-height:18px;
- } 
+#gallery div p {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666; /* Text color for better visibility */
+}
 
- #gallery .previous{ 
-     display:inline;
-     float:left;
-     margin-left:80px;
-     text-decoration:none;
- } 
+#gallery .previous, 
+#gallery .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px; /* Increased size for better visibility */
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better contrast */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
 
- #gallery .next{ 
-     display:inline;
-     float:right;
-     margin-right:80px;
-     text-decoration:none;
- }
+#gallery .previous:hover, 
+#gallery .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+#gallery .previous {
+    left: 10px;
+}
+
+#gallery .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    #gallerywrapper {
+        width: 100%;
+        height: auto; /* Adjust height as needed for smaller screens */
+    }
+
+    #gallery div {
+        padding: 0; /* Adjust padding for smaller screens */
+    }
+
+    #gallery .previous, 
+    #gallery .next {
+        font-size: 20px; /* Slightly smaller navigation buttons for smaller screens */
+        padding: 8px;
+    }
+}
